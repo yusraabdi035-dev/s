@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form page</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 34px;
+            padding: 20px;
+        }
+        .form-container{
+            background-color: aliceblue;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #add;
+            width: 100%;
+            text-align: center;
+        }
+        input,select,textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 18px 0;
+            border: 1px solid #add;
+            border-radius: 6px;
+            font-weight: bold;
+
+        }
+        button{
+            width: 100%;
+            padding: 12px;
+            background-color: #add;
+            color: aliceblue;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #add;
+        }
+        nav{
+            text-decoration: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            z-index: 1000;
+            display: flex;
+            gap: 20px;
+            float: right;
+
+
+        }
+          
+            
+        
+        a{
+           text-decoration: none; 
+
+        }
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>&nbsp;&nbsp;
+       <a href="Gellary.html">Photo</a>&nbsp;&nbsp;
+        <a href="scheduale.html">Time table</a>&nbsp;&nbsp;
+        <a href="bookin.html">Forms</a>&nbsp;&nbsp;
+        <a href="about.html">about\History</a>&nbsp;&nbsp;
+    </nav>
+    <hr>
+    <div class="form-container">
+    <h2> Boos Ka Qabso Dhakhtarka (Book an Appointment)</h2>
+    <p> Fadlan buuxi foomkan si aad u qabsato ballan dhakhtar oo degdeg ah.</p>
+    <form>
+        <div class="form-group">
+        
+            <label for="magaca">magacaga buuxa:</label><br>
+            <input type="text" id="magac" placeholder="halkan gali mgca buuxa">
+            
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="Email">Gali Emailkada:</label><br>
+            <input type="text" id="Email" placeholder="Geli Emailkada halkan">
+
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="tell">lambarka telefonka:</label><br>
+            <input type="text" id="tell" placeholder="halkan Gali telefonkada">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="qeybta">Dooro qaybta cafimadka:</label><br>
+            <select id="qaybta required">
+                <option value="" disabled selected>dooro qaybta</option>
+                <option value="indhaha">Genaral surgery</option>
+                <option value="ilkahaha">Internal Medicine</option>
+                <option value="carurta">Radiology</option>
+                <option value="guud">peddiatrics</option>
+                <option value="guud">obstetrics&Gynecology</option>
+                
+                <div class="form-group">
+                    <label for="tariikh">dooro tariikhda aad Rabto:</label><br>
+                    <input type="date"  id="tariikh">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="ujeddo">ujeddada Ballanta:</label><br>
+                    <textarea name="" id="ujeeddo" placeholder="halkan qor fariin koban oo ku sabsan xnunkaaga"></textarea>
+                </div>
+                <br>
+                <button type="submit">gudbi Ballnta</button>
+
+
+
+
+            
+
+
+            </select>
+        </div>
+        <br>
+
+    </form>
+    </div>
+
+    
+</body>
+</html>
